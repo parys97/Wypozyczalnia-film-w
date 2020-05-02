@@ -1,0 +1,33 @@
+easy_admin:
+    site_name: 'Panel administracyjny'
+    entities:
+        User:
+            class: App\Entity\User
+            label: 'Użytkownicy'
+            list:
+                title: "Lista użytkowników"
+                fields:
+                    - { property: 'email', type: 'email' }
+                    - { property: 'username', label: "Nazwa użytkownika" }
+                    - { property: 'enabled', label: "Aktywny?" }
+                    - { property: 'last_login', type: 'datetime', label: "Ostatnie logowanie", format: 'Y-m-d H:i:s' }
+        Category:
+            class: App\Entity\Category
+            label: 'Kategorie'
+            list:
+                title: "Lista kategorii"
+        Movie:
+            class: App\Entity\Movie
+            label: 'Filmy'
+            list:
+                title: "Most recent customers"
+        Review:
+            class: App\Entity\Review
+            label: 'Recencje'
+            list:
+                title: "Recjencje filmów"
+        Order:
+            class: App\Entity\Order
+            label: 'Zamówienia'
+            list:
+                title: "Lista złożonych zamówień"

@@ -1,0 +1,21 @@
+
+Uruchomienie projektu:
+  
+wgraæ folder wypozyczalnia do htdocs
+uruchomiæ xampp:apache, mysql
+polecenia uruchamia³em za pomoc¹ Gitbash MINGW64
+utworzenie bazy danych: ./../../php/php.exe 
+./bin/console doctrine:databse:create
+ 
+za³adowanie schema bazy danych: ./../../php/php.exe 
+./bin/console doctrine:schema:update --force
+ 
+za³adowanie danych testowych: ./../../php/php.exe 
+./bin/console doctrine:fixtures:load
+
+
+
+W przegl¹darce projekt uruchamiamy wpisuj¹c: "localhost/Wypozyczalnia/public/"
+uzytkownicy:
+student:student
+admin:admin
